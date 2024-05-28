@@ -1,44 +1,55 @@
 import 'package:quiz_app/models/quiz_questions.dart';
 
 const questions = [
-  QuizQuestions('What are the main building blocks of Flutter UIs?', [
-    'Widgets',
-    'Components',
-    'Blocks',
-    'Functions',
+  QuizQuestion(
+    'What are the main building blocks of Flutter UIs?',
+    [
+      'Widgets',
+      'Components',
+      'Blocks',
+      'Functions',
+    ],
+  ),
+  QuizQuestion('How are Flutter UIs built?', [
+    'By combining widgets in code',
+    'By combining widgets in a visual editor',
+    'By defining widgets in config files',
+    'By using XCode for iOS and Android Studio for Android',
   ]),
-  QuizQuestions(
-      'Which widget is used for creating a scrollable list of items in Flutter?',
-      [
-        'ListView',
-        'Column',
-        'Row',
-        'Container',
-      ]),
-  QuizQuestions('How do you declare a StatefulWidget in Flutter?', [
-    'class MyWidget extends StatefulWidget',
-    'class MyWidget extends StatelessWidget',
-    'class MyWidget extends Widget',
-    'class MyWidget extends State',
-  ]),
-  QuizQuestions('Which method is mandatory to implement in a StatefulWidget?', [
-    'createState',
-    'build',
-    'initState',
-    'setState',
-  ]),
-  QuizQuestions(
-      'What is the purpose of the pubspec.yaml file in a Flutter project?', [
-    'To manage dependencies and project metadata',
-    'To define app routing',
-    'To handle state management',
-    'To specify widget properties',
-  ]),
-  QuizQuestions(
-      'Which widget would you use for creating an overlay in Flutter?', [
-    'Stack',
-    'Row',
-    'Column',
-    'Container',
-  ])
+  QuizQuestion(
+    'What\'s the purpose of a StatefulWidget?',
+    [
+      'Update UI as data changes',
+      'Update data as UI changes',
+      'Ignore data changes',
+      'Render UI that does not depend on data',
+    ],
+  ),
+  QuizQuestion(
+    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
+    [
+      'StatelessWidget',
+      'StatefulWidget',
+      'Both are equally good',
+      'None of the above',
+    ],
+  ),
+  QuizQuestion(
+    'What happens if you change data in a StatelessWidget?',
+    [
+      'The UI is not updated',
+      'The UI is updated',
+      'The closest StatefulWidget is updated',
+      'Any nested StatefulWidgets are updated',
+    ],
+  ),
+  QuizQuestion(
+    'How should you update data inside of StatefulWidgets?',
+    [
+      'By calling setState()',
+      'By calling updateData()',
+      'By calling updateUI()',
+      'By calling updateState()',
+    ],
+  ),
 ];
