@@ -32,7 +32,7 @@ class StartScreen extends StatelessWidget {
           ElevatedButton.icon(
               onPressed: startQuiz,
               style: OutlinedButton.styleFrom(
-                foregroundColor: Color.fromARGB(255, 0, 12, 54),
+                foregroundColor: const Color.fromARGB(255, 0, 12, 54),
               ),
               icon: const Icon(Icons.arrow_right_alt),
               label: const Text('Start Quiz'))

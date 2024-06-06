@@ -12,7 +12,6 @@ class QuestionIdentifier extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     final questionNumber = questionIndex + 1;
 
     return Container(
@@ -22,7 +21,7 @@ class QuestionIdentifier extends StatelessWidget {
       decoration: BoxDecoration(
           color: isCorrectAnswer
               ? const Color.fromARGB(255, 150, 198, 241)
-              : Color.fromARGB(193, 160, 0, 0),
+              : const Color.fromARGB(193, 160, 0, 0),
           borderRadius: BorderRadius.circular(100)),
       child: Text(
         questionNumber.toString(),
