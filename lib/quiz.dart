@@ -6,6 +6,7 @@ import 'package:quiz_app/result_screen.dart';
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
+
   @override
   State<Quiz> createState() {
     return _QuizState();
@@ -28,10 +29,16 @@ class _QuizState extends State<Quiz> {
 
       if (selectedAnswers.length == questions.length) {
         setState(() {
-          selectedAnswers = [];
           activeScreen = 'result-screen';
         });
       }
+    });
+  }
+
+  void restartQuiz() {
+    setState(() {
+      selectedAnswers = [];
+      activeScreen = 'questions_screen';
     });
   }
 
@@ -47,6 +54,7 @@ class _QuizState extends State<Quiz> {
     if (activeScreen == 'result-screen') {
       screenWidget = ResultScreen(
         chosenAnswers: selectedAnswers,
+        onRestart: restartQuiz,
       );
     }
 
@@ -56,8 +64,8 @@ class _QuizState extends State<Quiz> {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromARGB(255, 0, 145, 255),
-                Color.fromARGB(255, 240, 0, 240)
+                Color.fromARGB(255, 0, 213, 255),
+                Color.fromARGB(255, 34, 0, 255)
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
