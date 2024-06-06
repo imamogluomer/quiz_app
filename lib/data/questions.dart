@@ -2,54 +2,183 @@ import 'package:quiz_app/models/quiz_questions.dart';
 
 const questions = [
   QuizQuestion(
-    'What are the main building blocks of Flutter UIs?',
+    'What is the tallest mountain in the world?',
     [
-      'Widgets',
-      'Components',
-      'Blocks',
-      'Functions',
-    ],
-  ),
-  QuizQuestion('How are Flutter UI\'s built?', [
-    'By combining widgets in code',
-    'By combining widgets in a visual editor',
-    'By defining widgets in config files',
-    'By using XCode for iOS and Android Studio for Android',
-  ]),
-  QuizQuestion(
-    'What\'s the purpose of a StatefulWidget?',
-    [
-      'Update UI as data changes',
-      'Update data as UI changes',
-      'Ignore data changes',
-      'Render UI that does not depend on data',
+      'Mount Everest',
+      'K2',
+      'Kangchenjunga',
+      'Lhotse',
     ],
   ),
   QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
+    'What is the capital of the United States?',
     [
-      'StatelessWidget',
-      'StatefulWidget',
-      'Both are equally good',
-      'None of the above',
+      'Washington D.C.',
+      'New York',
+      'Los Angeles',
+      'Chicago',
     ],
   ),
   QuizQuestion(
-    'What happens if you change data in a StatelessWidget?',
+    'How many days are there in a year?',
     [
-      'The UI is not updated',
-      'The UI is updated',
-      'The closest StatefulWidget is updated',
-      'Any nested StatefulWidgets are updated',
+      '365',
+      '366',
+      '364',
+      '360',
     ],
   ),
   QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
+    'What is Einstein\'s famous formula?',
     [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
+      'E=mc²',
+      'F=ma',
+      'a²+b²=c²',
+      'V=IR',
+    ],
+  ),
+  QuizQuestion(
+    'Which is the largest ocean in the world?',
+    [
+      'Pacific Ocean',
+      'Atlantic Ocean',
+      'Indian Ocean',
+      'Arctic Ocean',
+    ],
+  ),
+  QuizQuestion(
+    'Who painted the Mona Lisa?',
+    [
+      'Leonardo da Vinci',
+      'Pablo Picasso',
+      'Vincent van Gogh',
+      'Michelangelo',
+    ],
+  ),
+  QuizQuestion(
+    'Who was the first person to walk on the moon?',
+    [
+      'Neil Armstrong',
+      'Buzz Aldrin',
+      'Yuri Gagarin',
+      'Michael Collins',
+    ],
+  ),
+  QuizQuestion(
+    'Which is the largest planet in our solar system?',
+    [
+      'Jupiter',
+      'Saturn',
+      'Uranus',
+      'Neptune',
+    ],
+  ),
+  QuizQuestion(
+    'What is the longest river in the world?',
+    [
+      'Nile River',
+      'Amazon River',
+      'Yangtze River',
+      'Mississippi River',
+    ],
+  ),
+  QuizQuestion(
+    'Who won the first Nobel Prize in Physics?',
+    [
+      'Wilhelm Conrad Roentgen',
+      'Albert Einstein',
+      'Marie Curie',
+      'Max Planck',
+    ],
+  ),
+  QuizQuestion(
+    'Which country is known as the Land of the Rising Sun?',
+    [
+      'Japan',
+      'China',
+      'South Korea',
+      'Thailand',
+    ],
+  ),
+  QuizQuestion(
+    'What is the smallest country in the world?',
+    [
+      'Vatican City',
+      'Monaco',
+      'San Marino',
+      'Liechtenstein',
+    ],
+  ),
+  QuizQuestion(
+    'Which planet is known as the Red Planet?',
+    [
+      'Mars',
+      'Venus',
+      'Jupiter',
+      'Saturn',
+    ],
+  ),
+  QuizQuestion(
+    'Who wrote "Romeo and Juliet"?',
+    [
+      'William Shakespeare',
+      'Charles Dickens',
+      'Jane Austen',
+      'Mark Twain',
+    ],
+  ),
+  QuizQuestion(
+    'Which element has the chemical symbol "O"?',
+    [
+      'Oxygen',
+      'Gold',
+      'Osmium',
+      'Oganesson',
+    ],
+  ),
+  QuizQuestion(
+    'What is the largest continent on Earth?',
+    [
+      'Asia',
+      'Africa',
+      'North America',
+      'Antarctica',
+    ],
+  ),
+  QuizQuestion(
+    'In which year did World War I begin?',
+    [
+      '1914',
+      '1915',
+      '1916',
+      '1917',
+    ],
+  ),
+  QuizQuestion(
+    'Who discovered penicillin?',
+    [
+      'Alexander Fleming',
+      'Marie Curie',
+      'Isaac Newton',
+      'Albert Einstein',
+    ],
+  ),
+  QuizQuestion(
+    'What is the capital of France?',
+    [
+      'Paris',
+      'London',
+      'Berlin',
+      'Madrid',
+    ],
+  ),
+  QuizQuestion(
+    'Which planet is closest to the sun?',
+    [
+      'Mercury',
+      'Venus',
+      'Earth',
+      'Mars',
     ],
   ),
 ];

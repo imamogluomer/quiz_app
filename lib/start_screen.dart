@@ -20,7 +20,7 @@ class StartScreen extends StatelessWidget {
             height: 80,
           ),
           Text(
-            'Learn Flutter!',
+            'General Knowledge Quiz!',
             style: GoogleFonts.lato(
                 color: const Color.fromARGB(174, 255, 255, 255),
                 fontWeight: FontWeight.bold,
@@ -32,10 +32,16 @@ class StartScreen extends StatelessWidget {
           ElevatedButton.icon(
               onPressed: startQuiz,
               style: OutlinedButton.styleFrom(
-                foregroundColor: const Color.fromARGB(255, 0, 12, 54),
+                  foregroundColor: const Color.fromARGB(177, 255, 255, 255),
+                  backgroundColor: const Color.fromARGB(175, 12, 11, 11)),
+              icon: const Icon(
+                Icons.arrow_right_alt,
+                size: 30,
               ),
-              icon: const Icon(Icons.arrow_right_alt),
-              label: const Text('Start Quiz'))
+              label: const Text(
+                'Start Quiz',
+                style: TextStyle(color: Color.fromARGB(177, 255, 255, 255)),
+              ))
         ],
       ),
     );

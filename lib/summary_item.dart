@@ -31,9 +31,16 @@ class SummaryItem extends StatelessWidget {
                 Text(
                   itemData['question'] as String,
                   style: GoogleFonts.lato(
-                    color: Colors.white,
+                    color: Color.fromARGB(236, 255, 255, 255),
                     fontSize: 16,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w700,
+                    shadows: <Shadow>[
+                      const Shadow(
+                        offset: Offset(2.0, 2.0),
+                        blurRadius: 5.0,
+                        color: Color.fromARGB(56, 0, 0, 0),
+                      )
+                    ],
                   ),
                 ),
                 const SizedBox(
@@ -42,13 +49,29 @@ class SummaryItem extends StatelessWidget {
                 Text(
                   itemData['user_answer'] as String,
                   style: const TextStyle(
-                    color: Color.fromARGB(255, 150, 198, 241),
+                    color: Color.fromARGB(255, 129, 237, 28),
+                    fontWeight: FontWeight.w600,
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(2.0, 2.0),
+                        blurRadius: 5.0,
+                        color: Color.fromARGB(56, 0, 0, 0),
+                      )
+                    ],
                   ),
                 ),
                 Text(
                   itemData['correct_answer'] as String,
                   style: const TextStyle(
-                    color: Color.fromARGB(255, 150, 198, 241),
+                    color: Color.fromARGB(164, 64, 255, 0),
+                    fontWeight: FontWeight.w600,
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(2.0, 2.0),
+                        blurRadius: 5.0,
+                        color: Color.fromARGB(56, 0, 0, 0),
+                      )
+                    ],
                   ),
                 ),
               ],
