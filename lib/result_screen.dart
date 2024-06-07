@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz_app/data/questions.dart';
 import 'package:quiz_app/questions_summary.dart';
@@ -62,7 +61,7 @@ class ResultScreen extends StatelessWidget {
             Text(
               'You received $finalPoint by answering $numCorrenctQuestions questions correctly!',
               style: GoogleFonts.lato(
-                color: Color.fromARGB(199, 255, 255, 255),
+                color: const Color.fromARGB(199, 255, 255, 255),
                 fontSize: 13,
                 fontWeight: FontWeight.w900,
                 shadows: <Shadow>[
